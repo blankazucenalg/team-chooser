@@ -9,10 +9,10 @@
 </head>
 <body>
   <div class="container">
-    <form action="#">
+    <form action="#" method="get" onsubmit="defineTeams(event)">
       <label for="teams-quantity"># de equipos</label>
       <input type="number" name="teams-quantity" id="teams-quantity" min="2">
-      <input type="submit" value="Vamos!" onclick="defineTeams()">
+      <input type="submit" value="Vamos!" >
     </form>
     <div class="teams-placement">
       <div class="generated-teams" id="teams-container"></div>

@@ -5,7 +5,8 @@ let teamsPool = [];
 let peopleInTeams = [];
 let peopleByTeams = {};
 
-const defineTeams = () => {
+const defineTeams = (event) => {
+  event.preventDefault();
   const teamsQuantity = document.getElementById('teams-quantity').value;
   console.log(teamsQuantity);
   const teamsContainer = document.getElementById('teams-container');
